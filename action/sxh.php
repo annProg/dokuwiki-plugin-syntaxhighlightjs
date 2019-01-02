@@ -91,7 +91,10 @@ class action_plugin_syntaxhighlightjs_sxh extends DokuWiki_Action_Plugin {
         // ptln("    hljs.highlightBlock(blocks[i]);");
         // ptln("  }");
         ptln("};");
-        ptln("jQuery(document).ready(function() {jQuery('pre.code div').each(function(i, block) {hljs.configure({'useBR':true});hljs.highlightBlock(block);});});");
+		$selectClass = $this->getConf('selectClass');
+		if($selectClass) {
+		    ptln("jQuery(document).ready(function() {jQuery('$selectClass').each(function(i, block) {hljs.highlightBlock(block);});});");
+		}
         ptln("</script>");
     }
 

@@ -34,3 +34,4 @@ $meta['theme'] = array(
     )
 );
 $meta['restrictedClasses'] = array('string');
+$meta['selectClass'] = array('string');

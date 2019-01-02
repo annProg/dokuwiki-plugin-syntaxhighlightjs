@@ -11,3 +11,5 @@ $conf['syntax'] = 'sxh';
 $conf['theme'] = 'default';
 // Restrict usage of plugin to these classes (comma separated)
 $conf['restrictedClasses'] = '';
+// highlight block with selectClass. For example, origin code block use class `pre.code`
+$conf['selectClass'] = '';
